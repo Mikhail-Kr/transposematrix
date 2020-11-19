@@ -6,6 +6,6 @@ public class Main {
    * @return Транспонированная матрица.
    */
   public static int[][] transposeMatrix(int[][] matrix) {
-    return matrix;
+    return null;
   }
 }
