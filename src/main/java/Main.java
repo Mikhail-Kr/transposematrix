@@ -5,14 +5,17 @@ public class Main {
    * @param matrix матрица.
    * @return Транспонированная матрица.
    */
+
   public static int[][] transposeMatrix(int[][] matrix) {
-    int [][] TransposedMatrix = new int [matrix[0].length][matrix.length];
-      for (int i = 0; i < matrix.length; i++) {
-      for (int j = 0; j < matrix[0].length; j++) {
-        TransposedMatrix[j][i] = matrix[i][j];
+    int [][] tr = new int [matrix[0].length][matrix.length];
+    int n = matrix[0].length;
+    int m = matrix.length;
+    for (int i = 0; i < m; i++) {
+      for (int j = 0; j < n; j++) {
+        tr[j][i] = matrix[i][j];
       }
     }
-    return TransposedMatrix;
+    return tr;
   }
 }
 
