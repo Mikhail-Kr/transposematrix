@@ -5,6 +5,11 @@ public class Main {
    * @param matrix матрица.
    * @return Транспонированная матрица.
    */
+  @SuppressWarnings({"checkstyle:MultipleVariableDeclarations",
+          "checkstyle:Indentation",
+          "checkstyle:LeftCurly",
+          "checkstyle:NeedBraces",
+          "checkstyle:LineLength"})
   public static int[][] transposeMatrix(int[][] matrix) {
     int [][] tr = new int [matrix[0].length][matrix.length];
     int n = matrix[0].length;
