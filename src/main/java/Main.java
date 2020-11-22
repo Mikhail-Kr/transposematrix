@@ -7,10 +7,8 @@ public class Main {
    */
   public static int[][] transposeMatrix(int[][] matrix) {
     int [][] TransposedMatrix = new int [matrix[0].length][matrix.length];
-    int n = matrix.length;
-    int m = matrix[0].length;
-      for (int i = 0; i < n; i++) {
-      for (int j = 0; j < m; j++) {
+      for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[0].length; j++) {
         TransposedMatrix[j][i] = matrix[i][j];
       }
     }
